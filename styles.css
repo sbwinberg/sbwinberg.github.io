@@ -1,11 +1,28 @@
+body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: black;
+}
+
+.text,
+.tea-title,
+.header,
+.banner {
+    color: rgba(255, 246, 240, 0.9);
+    font-size: 22px;
+    font-family: Helvetica;
+    font-weight:600;
+}
+
 .header {
     height: 69px;
-    background-color: black;
-    color: rgba(255, 246, 240, 0.9);
+    width: 100%;
     display:flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px 0 10px;
+    border-bottom: 1px solid seashell;
 }
 
 .right {
@@ -45,7 +62,117 @@
     justify-content: center;
     align-items: center;
     background-color: black;
-    color: rgba(255, 246, 240, 0.9);
     width: 1200px;
     font-family: Helvetica;
+    line-height: 20%;
+}
+
+.text {
+    margin-top: 10px;
+}
+
+.tea-title {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    margin-top: 2em;
+    line-height: 10%;
+}
+
+.totm {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+}
+
+.sized {
+    height: 200px;
+    width: 300px;
+}
+
+.totm-pic {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    width: 1000px;
+}
+
+.pic {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 1em 1em 0 1em;
+}
+
+.locations {
+    color: rgba(255, 246, 240, 1);
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 500px;
+    background-image: url(./images/img-locations-background.jpg);
+    margin-top: 3%;
+}
+
+.square {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    margin: 15px 20px 15px 20px;
+}
+
+.fix {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.loc-text {
+    padding: 15px 10px 15px 10px;
+    font-size: 22px;
+    font-family: Helvetica;
+    line-height: 200%;
+}
+
+.loc-text h3 {
+    line-height: 100%;
+}
+
+.locations h2 {
+    text-align: center;
+    flex-basis: 100%;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-family: Helvetica;
+    font-size: 22px;
+}
+
+.contact {
+    display: flex;
+    height: 200px;
+    color: rgba(255, 246, 240, 1);
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 22px;
+    margin-top: 0%;
+}
+
+.info-title {
+    margin-top: 15px;
+}
+
+.footer {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: rgba(255, 246, 240, 1);  
+    font-family: Helvetica;
+    font-size: small;
 }
